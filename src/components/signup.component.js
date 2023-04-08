@@ -17,7 +17,7 @@ export default class SignUp extends Component {
 const {fname, lname, email, password} = this.state;
 console.log({fname, lname, email, password});
 
-axios.post("http://localhost:5000/register?name=Test", {
+axios.post("https://mdm-backend.onrender.com/register", {
   fname: fname,
   lname: lname,
   email: email,

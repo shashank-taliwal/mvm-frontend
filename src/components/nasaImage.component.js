@@ -7,7 +7,7 @@ import App from '../App';
 import './imgst.css';
 export default class NasaImage extends Component {
   componentDidMount() {
-    axios.post("http://localhost:5000/nasaImg?name=Test", {
+    axios.post("https://mdm-backend.onrender.com/nasaImg", {
       token: window.localStorage.getItem("token"),
     }).then((res) => { console.log(res); })
   }

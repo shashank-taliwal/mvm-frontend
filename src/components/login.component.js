@@ -20,7 +20,7 @@ export default class Login extends Component {
     const { email, password } = this.state;
     console.log({ email, password });
 
-    axios.post("http://localhost:5000/login-user?name=Test", {
+    axios.post("https://mdm-backend.onrender.com/login-user", {
       email: email,
       password: password
     }).then((res) => {
